@@ -8,6 +8,7 @@ django = "<4.00,>=3.2"
 djangorestframework = "*"
 
 [dev-packages]
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.8"
