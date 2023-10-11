@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "<4.00,>=3.2"
 djangorestframework = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
