@@ -46,7 +46,7 @@ class AnonymousCartFilter(admin.SimpleListFilter):
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     readonly_fields = ['user']
-    list_display = ['first_name','last_name','phone','sex','membership','orders']
+    list_display = ['id','first_name','last_name','phone','sex','membership','orders']
     list_editable = ['membership']
     list_filter = ['birth_date','membership','sex']
     ordering = ['user__first_name', 'user__last_name']

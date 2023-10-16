@@ -8,6 +8,7 @@ django = "<4.00,>=3.2"
 djangorestframework = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
+drf-nested-routers = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
