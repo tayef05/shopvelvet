@@ -6,6 +6,7 @@ from core.models import User
 from likes.models import LikedItem
 from store.admin import ProductAdmin
 from store.models import Product
+from tags.models import TaggedItem
 
 # Register your models here.
 
@@ -26,8 +27,13 @@ class LikedItemInline(GenericTabularInline):
     model = LikedItem
     extra = 1
 
+class TaggedItemInline(GenericTabularInline):
+    autocomplete_fields = ['tag']
+    model = TaggedItem
+    extra = 1
+
 class CustomProductAdmin(ProductAdmin):
-    inlines = [LikedItemInline]
+    inlines = [LikedItemInline,TaggedItemInline]
 
 admin.site.unregister(Product)
 admin.site.register(Product,CustomProductAdmin)
