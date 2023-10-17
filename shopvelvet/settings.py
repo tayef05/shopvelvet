@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'djoser',
     'core',
     'store',
-    'likes'
+    'likes',
+    'tags'
 ]
 
 MIDDLEWARE = [
